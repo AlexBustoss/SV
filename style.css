@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #ff6384;
+    --hover-color: #ff8294;
+    --text-color: #ffffff;
+    --background-color: #fef0f3; /* Fondo más claro */
+    --container-bg-color: #fff0f2; /* Rosa muy suave para el contenedor */
+    --font-family: 'Arial', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    font-size: 18px; /* Aumentar el tamaño base de la fuente */
+
+}
+
+#app {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--container-bg-color); /* Color de fondo rosa suave */
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+button {
+    margin: 200px 0;
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+    outline: none;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none;
+}
+
+#respuesta img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 30px 0;
+    animation: fadeIn 2s;
+}
+
+#respuesta p {
+    color: var(--primary-color); /* Utiliza el color primario para el texto */
+    font-size: 24px; /* Tamaño de letra más grande para destacar */
+    margin-top: 20px; /* Espaciado después de la imagen */
+    font-weight: bold; /* Texto en negrita para más impacto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    letter-spacing: 0.05em; /* Espaciado entre letras para mejorar legibilidad */
+    line-height: 1.4; /* Ajusta el espaciado entre líneas para mejorar la legibilidad */
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
