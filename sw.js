@@ -1,5 +1,5 @@
 // Definir el nombre del caché
-const CACHE_NAME = 'mi-san-valentin-v1';
+const CACHE_NAME = 'mi-san-valentin-v2';
 // Listar todos los recursos que queremos que se almacenen en caché
 const urlsToCache = [
     '/',
@@ -9,7 +9,9 @@ const urlsToCache = [
     '/images/foto_final.jpg',
     '/manifest.json',
     '/images/icon-192x192.png', // Añade esta línea
-    '/images/icon-512x512.png'  // Y esta línea
+    '/images/icon-512x512.png',  // Y esta línea
+    '/images/foto_final.JPG' // Agrega esta línea
+
   ];
   
 
